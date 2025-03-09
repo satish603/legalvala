@@ -18,7 +18,7 @@ export const Contact = () => {
         
         <meta
           name="description"
-          content="Get in touch with LEGALVALA CONSULTANCY LLP for expert legal and business consultation. Location: India, Office Hours: Monday - Saturday: 9 AM - 6 PM, Email: support@legalvala.com, Phone: +91 9876543210."
+          content="Get in touch with LEGALVALA CONSULTANCY LLP for expert legal and business consultation. Location: India, Office Hours: Monday - Saturday: 9 AM - 6 PM, Email: support@legalvala.com, Phone: +91 7302658311."
         />
       </Helmet>
       <section>
@@ -84,7 +84,7 @@ export const Contact = () => {
                     </span>
                   </div>
                   <h5>Phone</h5>
-                  <p>+91 9876543210</p>
+                  <p>+91 7302658311</p>
                 </div>
               </div>
             </div>

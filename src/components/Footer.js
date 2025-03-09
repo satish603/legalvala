@@ -95,7 +95,7 @@ const Footer = () => {
         {/* WhatsAppWidget */}
         <div>
           <WhatsAppWidget
-            phoneNo="+919876543210"
+            phoneNo="+917302658311"
             position="right"
             iconSize="50"
             iconColor="white"
