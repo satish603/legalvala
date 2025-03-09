@@ -402,27 +402,27 @@ footer h6 {
 }
 
 .civil {
-  background-image: url("/public/assets/civil-law.webp");
+  background-image: url("/public/assets/LAWS.png");
 }
 
 .criminal {
-  background-image: url("/public/assets/criminal-law.webp");
+  background-image: url("/public/assets/Services-Tax.png");
 }
 
 .executare {
-  background-image: url("/public/assets/executare.webp");
+  background-image: url("/public/assets/Servicesimportexport.png");
 }
 
 .family {
-  background-image: url("/public/assets/family-law.webp");
+  background-image: url("/public/assets/Services-IP.png");
 }
 
 .labor {
-  background-image: url("/public/assets/labor-law.webp");
+  background-image: url("/public/assets/Services-isocERTIFICATIONS.png");
 }
 
 .business {
-  background-image: url("/public/assets/business-law.webp");
+  background-image: url("/public/assets/Services-STARTUP.png");
 }
 
 .insolvency {

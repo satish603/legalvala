@@ -144,7 +144,7 @@ const Acasa = () => {
             <div className="col-lg-5 d-flex align-items-center justify-content-center">
               <div>
                 <img
-                  src="/assets/business-law.webp"
+                  src="/assets/Services-STARTUP.png"
                   className="intro-img img-fluid d-block rounded-2"
                   alt="Business and law concept"
                   style={{ maxHeight: "300px" }}
