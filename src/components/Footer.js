@@ -27,7 +27,7 @@ const Footer = () => {
                 />
                 <img
                   src="/assets/component.png"
-                  className="img-fluid px-0 logo-text"
+                  className="img-fluid px-4 logo-text"
                   alt="LegalVala Consultancy LLP"
                   width="150"
                   height="100"
@@ -35,9 +35,9 @@ const Footer = () => {
               </span>
               <p className="content pt-3 px-3">
                 LegalVala Consultancy LLP is your trusted partner in business
-                and legal matters in India. We specialize in **company
+                and legal matters in India. We specialize in company
                 registrations, GST compliance, tax filings, and regulatory
-                approvals** to help your business thrive.
+                approvals to help your business thrive.
               </p>
             </div>
 
@@ -124,7 +124,7 @@ const Footer = () => {
         <div>
           <div className="bg-dark d-flex align-items-center justify-content-center">
             <hr></hr>
-            <p className="copyright mb-0">©2024 LegalVala Consultancy LLP</p>
+            <p className="copyright mb-0">©2025 LegalVala Consultancy LLP</p>
           </div>
         </div>
       </footer>

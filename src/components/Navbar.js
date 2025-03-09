@@ -21,7 +21,7 @@ const Navbar = () => {
                 />
                 <img
                   src="/assets/component.png"
-                  className="img-fluid px-0 logo-text"
+                  className="img-fluid px-4 logo-text"
                   alt="LegalVala Consultancy LLP"
                   width="200"
                   height="100"
