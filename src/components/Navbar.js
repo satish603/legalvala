@@ -61,7 +61,7 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item mx-3 mb-2">
                   <NavLink
-                    to="/services"
+                    to="/avocatura"
                     style={({ isActive }) => ({
                       textDecoration: "none",
                       color: isActive ? "#c2b697" : "#fff",
@@ -74,7 +74,7 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item mx-3 mb-2">
                   <NavLink
-                    to="/business-registration"
+                    to="/insolventa"
                     style={({ isActive }) => ({
                       textDecoration: "none",
                       color: isActive ? "#c2b697" : "#fff",
@@ -87,7 +87,7 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item mx-3 mb-2">
                   <NavLink
-                    to="/gst-compliance"
+                    to="/informatii-utile"
                     style={({ isActive }) => ({
                       textDecoration: "none",
                       color: isActive ? "#c2b697" : "#fff",
@@ -98,7 +98,7 @@ const Navbar = () => {
                     GST & Tax Compliance
                   </NavLink>
                 </li>
-                <li className="nav-item mx-3 mb-2">
+                {/* <li className="nav-item mx-3 mb-2">
                   <NavLink
                     to="/legal-compliance"
                     style={({ isActive }) => ({
@@ -110,7 +110,7 @@ const Navbar = () => {
                   >
                     Legal Compliance
                   </NavLink>
-                </li>
+                </li> */}
                 <li className="nav-item mx-3 mb-2">
                   <NavLink
                     to="/contact"
