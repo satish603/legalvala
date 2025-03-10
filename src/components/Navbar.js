@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className="navbar-brand">
               <span>
                 <img
-                  src="/assets/LOGO2.png"
+                  src="/assets/logo3.png"
                   className="img-fluid logo-image"
                   alt="LegalVala Consultancy LLP logo"
                   width="70"
