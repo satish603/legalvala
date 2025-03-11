@@ -9,6 +9,7 @@ import {
   faBriefcase,
   faScroll,
 } from "@fortawesome/free-solid-svg-icons";
+import Insolventa from "./Insolventa";
 
 const Avocatura = () => {
   return (
@@ -153,6 +154,7 @@ const Avocatura = () => {
               Additional services we offer include NGO registration, FSSAI (Food License), Private Limited & LLP formation, and much more.
             </p>
           </div>
+          <Insolventa />
         </div>
       </div>
     </>

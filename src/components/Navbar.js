@@ -72,7 +72,7 @@ const Navbar = () => {
                     Services
                   </NavLink>
                 </li>
-                <li className="nav-item mx-3 mb-2">
+                {/* <li className="nav-item mx-3 mb-2">
                   <NavLink
                     to="/insolventa"
                     style={({ isActive }) => ({
@@ -84,7 +84,7 @@ const Navbar = () => {
                   >
                     Business Registration
                   </NavLink>
-                </li>
+                </li> */}
                 <li className="nav-item mx-3 mb-2">
                   <NavLink
                     to="/informatii-utile"
