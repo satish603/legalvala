@@ -15,11 +15,11 @@ const Avocatura = () => {
     <>
       <div className="avocatura">
         <Helmet>
-          <title>Legal & Business Services | LEGALVALA CONSULTANCY LLP</title>
+          <title>Legal & Business Services | LegalVala</title>
           
           <meta
             name="description"
-            content="LEGALVALA CONSULTANCY LLP offers expert legal and business services, including company registration, taxation, intellectual property protection, and compliance advisory."
+            content="LegalVala offers expert legal and business services, including company registration, taxation, intellectual property protection, and compliance advisory."
           />
         </Helmet>
         <div>

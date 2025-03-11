@@ -21,20 +21,20 @@ const Footer = () => {
                 <img
                   src="/assets/Badaposter.png"
                   className="img-fluid logo-image me-1"
-                  alt="LegalVala Consultancy LLP logo"
+                  alt="LegalVala logo"
                   width="50"
                   height="50"
                 />
                 <img
                   src="/assets/component.png"
                   className="img-fluid px-4 logo-text"
-                  alt="LegalVala Consultancy LLP"
+                  alt="LegalVala"
                   width="150"
                   height="100"
                 />
               </span>
               <p className="content pt-3 px-3">
-                LegalVala Consultancy LLP is your trusted partner in business
+                LegalVala is your trusted partner in business
                 and legal matters in India. We specialize in company
                 registrations, GST compliance, tax filings, and regulatory
                 approvals to help your business thrive.
@@ -59,9 +59,9 @@ const Footer = () => {
                   <FontAwesomeIcon
                     icon={faPhone}
                     className="contact-icon"
-                    title="+91 98765 43210"
+                    title="+91 73026 58311"
                   />
-                  <span className="px-2 fw-light">+91 98765 43210</span>
+                  <span className="px-2 fw-light">+91 73026 58311</span>
                 </span>
               </div>
               <div className="mt-3 d-flex align-items-center justify-content-center flex-column">
@@ -69,9 +69,9 @@ const Footer = () => {
                   <FontAwesomeIcon
                     icon={faLocationDot}
                     className="contact-icon"
-                    title="Mumbai, India"
+                    title="Agra, Uttar Pradesh"
                   />
-                  <span className="px-2 fw-light">Mumbai, India</span>
+                  <span className="px-2 fw-light">Agra, Uttar Pradesh</span>
                 </span>
               </div>
             </div>
@@ -81,7 +81,7 @@ const Footer = () => {
               <div>
                 <h6 className="pb-2">Office Hours</h6>
                 <p className="fw-light">
-                  Monday – Friday: 9AM – 6PM <br /> Saturday: 10AM – 2PM <br />
+                  Monday – Saturday: 9 AM – 7 PM <br />
                   Sunday: Closed
                 </p>
                 <a href="/sitemap.xml" className="">
@@ -103,7 +103,7 @@ const Footer = () => {
             headerIcon="/assets/Badaposter.png"
             headerTxtColor="white"
             headerBgColor="#02182b"
-            headerTitle="LegalVala Consultancy LLP"
+            headerTitle="LegalVala"
             headerCaption="Online Support"
             bodyBgColor="#bbb"
             chatPersonName="Support"
@@ -124,7 +124,7 @@ const Footer = () => {
         <div>
           <div className="bg-dark d-flex align-items-center justify-content-center">
             <hr></hr>
-            <p className="copyright mb-0">©2025 LegalVala Consultancy LLP</p>
+            <p className="copyright mb-0">©2025 LegalVala</p>
           </div>
         </div>
       </footer>

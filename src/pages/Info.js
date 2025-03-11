@@ -5,7 +5,7 @@ const Info = () => {
   return (
     <div className="info">
       <Helmet>
-        <title>Information | LEGALVALA CONSULTANCY LLP</title>
+        <title>Information | LegalVala</title>
 
         <meta
           name="description"

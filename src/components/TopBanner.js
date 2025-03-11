@@ -17,7 +17,7 @@ const TopBanner = () => {
               className="banner-icon pe-2"
               size="1x"
             />
-            Mumbai, India
+            Agra, Uttar Pradesh
           </div>
           <div className="col col-md-4 col-sm-12 text-center mb-md-0">
             <FontAwesomeIcon
@@ -33,7 +33,7 @@ const TopBanner = () => {
               className="banner-icon phone-icon pe-2"
               size="1x"
             />{" "}
-            +91 98765 43210
+            +91 73026 58311
           </div>
         </div>
       </div>

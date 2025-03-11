@@ -8,7 +8,7 @@ const Insolventa = () => {
       <div className="insolventa-page">
         <Helmet>
           <title>
-            Insolvency & Bankruptcy Services | LEGALVALA CONSULTANCY LLP
+            Insolvency & Bankruptcy Services | LegalVala
           </title>
 
           <meta

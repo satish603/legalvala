@@ -14,11 +14,11 @@ export const Contact = () => {
   return (
     <div className="contact-page">
       <Helmet>
-        <title>Contact | LEGALVALA CONSULTANCY LLP</title>
+        <title>Contact | LegalVala</title>
         
         <meta
           name="description"
-          content="Get in touch with LEGALVALA CONSULTANCY LLP for expert legal and business consultation. Location: India, Office Hours: Monday - Saturday: 9 AM - 6 PM, Email: support@legalvala.com, Phone: +91 7302658311."
+          content="Get in touch with LegalVala for expert legal and business consultation. Location: India, Office Hours: Monday - Saturday: 9 AM - 6 PM, Email: support@legalvala.com, Phone: +91 7302658311."
         />
       </Helmet>
       <section>
@@ -54,7 +54,7 @@ export const Contact = () => {
                     </span>
                   </div>
                   <h5>Office Hours:</h5>
-                  <p>Monday – Saturday: 9 AM – 6 PM</p>
+                  <p>Monday – Saturday: 9 AM – 7 PM</p>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6 col-12 border-end border-1">

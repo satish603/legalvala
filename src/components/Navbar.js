@@ -15,14 +15,14 @@ const Navbar = () => {
                 <img
                   src="/assets/Badaposter.png"
                   className="img-fluid logo-image"
-                  alt="LegalVala Consultancy LLP logo"
+                  alt="LegalVala logo"
                   width="70"
                   height="70"
                 />
                 <img
                   src="/assets/component.png"
                   className="img-fluid px-4 logo-text"
-                  alt="LegalVala Consultancy LLP"
+                  alt="LegalVala"
                   width="200"
                   height="100"
                 />

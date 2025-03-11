@@ -14,11 +14,11 @@ const Acasa = () => {
     <>
       <div className="home-page">
         <Helmet>
-          <title>LEGALVALA CONSULTANCY LLP | Legal & Business Solutions</title>
+          <title>LegalVala | Legal & Business Solutions</title>
           
           <meta
             name="description"
-            content="LEGALVALA CONSULTANCY LLP offers professional legal, tax, and business consultancy services, ensuring compliance and growth for individuals and businesses."
+            content="LegalVala offers professional legal, tax, and business consultancy services, ensuring compliance and growth for individuals and businesses."
           />
         </Helmet>
         {/* HERO=========== */}
@@ -27,7 +27,7 @@ const Acasa = () => {
             <div className="hero-section">
               <div className="hero-overlay"></div>
               <div className="text-container d-flex flex-column justify-content-start align-items-start pt-6 slide">
-                <div className="text-1 fs-2 pb-3">LEGALVALA CONSULTANCY LLP</div>
+                <div className="text-1 fs-2 pb-3">LegalVala</div>
                 <div className="text-2 fs-4">
                   YOUR TRUSTED LEGAL & BUSINESS ADVISOR
                   <span className="fw-bold">
@@ -134,7 +134,7 @@ const Acasa = () => {
                 </h5>
 
                 <p className="text-separator fw-normal">
-                  At LEGALVALA CONSULTANCY LLP, we provide expert guidance in legal, tax, and business compliance. Our goal is to simplify complexities so you can focus on growth.
+                  At LegalVala, we provide expert guidance in legal, tax, and business compliance. Our goal is to simplify complexities so you can focus on growth.
                   <br />
                   <span className="ms-4"></span>Whether you're an entrepreneur, a startup, or an established business, we ensure your legal and business needs are met with precision and expertise.
                 </p>
