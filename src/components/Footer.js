@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="col-md-4 ps-4 mx-auto text-center">
               <span className="">
                 <img
-                  src="/assets/logo2.png"
+                  src="/assets/Badaposter.png"
                   className="img-fluid logo-image me-1"
                   alt="LegalVala Consultancy LLP logo"
                   width="50"
@@ -100,7 +100,7 @@ const Footer = () => {
             iconSize="50"
             iconColor="white"
             iconBgColor="#25D366"
-            headerIcon="/assets/logo2.png"
+            headerIcon="/assets/Badaposter.png"
             headerTxtColor="white"
             headerBgColor="#02182b"
             headerTitle="LegalVala Consultancy LLP"
