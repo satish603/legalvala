@@ -21,7 +21,7 @@ function App() {
               Blazing Render Creation Hub LLP 
             </title>
             <meta
-              name="BRC Hub"
+              name="BRC Hub LLP"
               content="This Page is Developed by Blazing Render Creation Hub LLP"
             />
           </Helmet>
