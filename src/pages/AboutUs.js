@@ -95,7 +95,7 @@ const AboutUs = () => {
       {/* INTRODUCTION */}
       <section className="container py-5">
         <h6 className="guide-text">INTRODUCTION</h6>
-        <h5 className="text-center pb-3">Who We Are</h5>
+        <h5 className="text-center pb-3"><strong>Who We Are</strong></h5>
         <p className="text-center">
           LEGALVALA CONSULTANCY LLP is a leading legal and business consultancy firm in India, dedicated to helping individuals, startups, and enterprises navigate legal complexities with ease. 
           Established in 2020, we have assisted thousands of clients in company registration, tax compliance, trademark registration, and business law.
@@ -105,7 +105,7 @@ const AboutUs = () => {
       {/* OUR EXPERTISE */}
       <section className="container py-5">
         <h6 className="guide-text">OUR EXPERTISE</h6>
-        <h5 className="text-center pb-3">What We Specialize In</h5>
+        <h5 className="text-center pb-3"><strong>What We Specialize In</strong></h5>
         <div className="row text-center">
           <div className="col-md-4">
             <FontAwesomeIcon icon={faGavel} size="3x" className="mb-3 text-primary" />
@@ -128,7 +128,7 @@ const AboutUs = () => {
       {/* TESTIMONIALS */}
       <section className="testimonials p-3 bg-light m-3 px-0">
         <h6 className="guide-text text-center">WHY CLIENTS LOVE US</h6>
-        <h5 className="text-center pb-3">SUCCESS STORIES</h5>
+        <h5 className="text-center pb-3"><strong>SUCCESS STORIES</strong></h5>
         <div className="container">
           <Slider {...settings}>
             {testimonials.map((testimonial, index) => (
@@ -150,7 +150,7 @@ const AboutUs = () => {
       {/* OUR TEAM */}
       <section className="team p-3 container">
         <h6 className="guide-text text-center">MEET OUR TEAM</h6>
-        <h5 className="text-center pb-3">The Experts Behind LEGALVALA</h5>
+        <h5 className="text-center pb-3"><strong>The Experts Behind LEGALVALA</strong></h5>
         <div className="row text-center">
           {team.map((member, index) => (
             <div key={index} className="col-md-4 p-3">
