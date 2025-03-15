@@ -133,11 +133,13 @@ const Acasa = () => {
                   Facing Legal or Business Challenges?
                 </h5>
 
-                <p className="text-separator fw-normal">
-                  At LegalVala, we provide expert guidance in legal, tax, and business compliance. Our goal is to simplify complexities so you can focus on growth.
-                  <br />
-                  <span className="ms-4"></span>Whether you're an entrepreneur, a startup, or an established business, we ensure your legal and business needs are met with precision and expertise.
-                </p>
+                <p className="text-separator fw-normal text-center px-3">
+  At <strong>LegalVala</strong>, we provide expert guidance in legal, tax, and business compliance. 
+  Our goal is to <strong>simplify complexities</strong> so you can focus on growth.
+  Whether you're an <strong>entrepreneur</strong>, a <strong>startup</strong>, or an <strong>established business</strong>, 
+  we ensure your legal and business needs are met with precision and expertise.
+</p>
+
               </div>
             </div>
 
@@ -182,51 +184,7 @@ const Acasa = () => {
             </div>
           </div>
         </section>
-                {/* CLIENT TESTIMONIALS========= */}
-                <section className="testimonials p-3 bg-light m-3 px-0">
-          <h6 className="guide-text text-center">CLIENT TESTIMONIALS</h6>
-          <div className="container d-flex flex-column justify-content-center align-items-center">
-            <h5 className="h-50 lh-base text-center pb-4">What Our Clients Say</h5>
-          </div>
-          <div className="row mt-4 flex-column flex-md-row mb-3">
-            {/* Testimonial 1 */}
-            <div className="col-md-4 text-center">
-              <div className="card shadow-sm p-3">
-                <p className="testimonial-text">
-                  "LEGALVALA helped me register my startup smoothly. Their team made GST & company compliance super easy!"
-                </p>
-                <h6 className="fw-bold mt-3">- Rahul Verma, Entrepreneur</h6>
-              </div>
-            </div>
-            {/* Testimonial 2 */}
-            <div className="col-md-4 text-center">
-              <div className="card shadow-sm p-3">
-                <p className="testimonial-text">
-                  "I was struggling with trademark registration, but LEGALVALA handled it professionally and quickly!"
-                </p>
-                <h6 className="fw-bold mt-3">- Sneha Kapoor, Business Owner</h6>
-              </div>
-            </div>
-            {/* Testimonial 3 */}
-            <div className="col-md-4 text-center">
-              <div className="card shadow-sm p-3">
-                <p className="testimonial-text">
-                  "Their legal guidance on compliance saved my business from penalties. Highly recommended!"
-                </p>
-                <h6 className="fw-bold mt-3">- Aman Malhotra, CEO</h6>
-              </div>
-            </div>
-          </div>
-          {/* CTA */}
-          <div className="text-center mt-4">
-            <p>Want to share your experience with LEGALVALA? Contact us!</p>
-            <Link to="/contact">
-              <button className="btn btn-outline-dark" aria-label="Share Your Experience">
-                Share Your Experience
-              </button>
-            </Link>
-          </div>
-        </section>
+               
 
       </div>
     </>

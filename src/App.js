@@ -9,6 +9,7 @@ import Acasa from "./pages/Acasa";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ErrorPage from "./pages/ErrorPage";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/avocatura" element={<Avocatura />} />
             <Route path="/insolventa" element={<Insolventa />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/AboutUs" element={<AboutUs />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
           <Footer />
