@@ -151,7 +151,7 @@ footer h6 {
   font-size: 0.9rem;
 }
 .hero-section {
-  background-image: url("/public/assets/hero2.png");
+  background-image: url("/public/assets/hero.png");
   height: 600px;
   background-size: cover;
   background-position: center;
