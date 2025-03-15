@@ -1,5 +1,7 @@
-import React from "react";
 import { Helmet } from "react-helmet";
+import React, { useState } from "react";
+import ContactForm from "../components/ContactForm";
+
 
 const services = [
   { name: "GST REGISTRATION", price: "1499", image: "/assets/product/1.png", description: "Get your GST registered and start your business legally in India." },
@@ -27,7 +29,21 @@ const services = [
 ];
 
 
+
 const Avocatura = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedService, setSelectedService] = useState("");
+
+  const openModal = (serviceName) => {
+    setSelectedService(`Hello, I am interested in ${serviceName}. Please provide me with more details.`);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setSelectedService(""); // Clear the selected service
+  };
+
   return (
     <>
       <div className="avocatura">
@@ -63,17 +79,32 @@ const Avocatura = () => {
                       {service.name}
                     </h5>
                     <p className="text-light small">{service.description}</p>
-                    <button className="btn btn-outline-light">Let's Start</button>
+                    <button
+                      className="btn btn-outline-light"
+                      onClick={() => openModal(service.name)}
+                    >
+                      Let's Start
+                    </button>
                   </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </div>
 
+        {/* Modal Contact Form */}
+        {showModal && (
+          <div className="modal-overlay" onClick={closeModal}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <span className="close-modal" onClick={closeModal}>&times;</span>
+              <ContactForm defaultMessage={selectedService} onClose={closeModal} />
+            </div>
+          </div>
+        )}
+      </div>
     </>
   );
 };
 
 export default Avocatura;
+

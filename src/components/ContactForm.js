@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
-const ContactForm = () => {
+const ContactForm = ({ defaultMessage = "" }) => {
   const [status, setStatus] = useState("Send Message");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(defaultMessage);
+
+  // Update query field when defaultMessage changes
+  useEffect(() => {
+    setQuery(defaultMessage);
+  }, [defaultMessage]);
 
   const sendMail = () => {
     const params = {
@@ -29,7 +34,7 @@ const ContactForm = () => {
         setName("");
         setEmail("");
         setPhone("");
-        setQuery("");
+        setQuery(defaultMessage);
       },
       (error) => {
         console.log("FAILED...", error);
@@ -42,7 +47,6 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
-
     sendMail();
   };
 
