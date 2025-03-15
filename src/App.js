@@ -18,11 +18,11 @@ function App() {
         <BrowserRouter>
           <Helmet>
             <title>
-              Cabinet de Avocatură și Insolvență în București | Alina Marin
+              Blazing Render Creation Hub LLP 
             </title>
             <meta
-              name="description"
-              content="Cabinet de avocatură și insolvență condus de Alina Marin. Consultanță, asistență și reprezentare pentru probleme juridice și de insolvență. Contactați-ne pentru soluții profesioniste."
+              name="BRC Hub"
+              content="This Page is Developed by Blazing Render Creation Hub LLP"
             />
           </Helmet>
           <Navbar />
