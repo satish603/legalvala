@@ -7,44 +7,51 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const AboutUs = () => {
-  const testimonials = [
-    {
-      name: "Surendra Saini",
-      role: "Director, Domantra Innovations Pvt Ltd",
-      text: "We at Domantra Innovations are extremely satisfied with the company management services provided by Legalvala. Their team is highly professional, responsive, and knowledgeable. Himanshu helped me with all my ROC compliances and is always available for better legal & business solutions. Highly recommended for anyone looking for reliable legal and business services!",
-      image: "/assets/people/boy (1).png",
-    },
-    {
-      name: "Gajendra Singh",
-      role: "Proprietor, Deepika Enterprises",
-      text: "I am very happy with the GST registration service provided by Legalvala. Their team was highly professional and efficient, and we received our GST certificate within just 4-5 days! I recommend Legalvala for anyone looking for quick and reliable legal services. Thank you for your excellent support!",
-      image: "/assets/people/boy (2).png",
-    },
-    {
-      name: "Mohini Bhadoriya",
-      role: "Director, Startfinity Navigator Pvt Ltd",
-      text: "I availed the Company Registration and Compliance Package from Legalvala for my company, and their service was outstanding! The pricing was the best in the market, and the entire process was fast, smooth, and transparent. I continue to work with them because of their excellent service.",
-      image: "/assets/people/girl (1).png",
-    },
-    {
-      name: "Akash Kumar",
-      role: "Relationship Manager, HDFC Bank Ltd",
-      text: "I got my Income Tax Return filed through Legalvala, and it was a great experience! The process was quick, hassle-free, and transparent. Their team is professional and very supportive. Definitely a 5-star experience!",
-      image: "/assets/people/boy.png",
-    },
-    {
-      name: "Charan Singh",
-      role: "Owner, PTSK Traders",
-      text: "I got my GST Registration and GST Return Filing done through Legalvala, and their service has been excellent! Their team is highly professional and efficient. They continue to handle my GST filings, ensuring top-notch service.",
-      image: "/assets/people/man-with-glasses.png",
-    },
-    {
-      name: "Dr Arul Ghandhi",
-      role: "Director, Narmada Exploration & Mining Pvt Ltd",
-      text: "I got ISO 9001, ISO 14001, ISO 23872, and OEM certificates for my company from Legalvala, and their service was outstanding! After facing a scam elsewhere, Legalvala regained my trust with their professionalism. Special thanks to Himanshu Ji for handling everything smoothly.",
-      image: "/assets/people/boy.png",
-    },
-  ];
+    const testimonials = [
+        {
+          name: "Surendra Saini",
+          role: "Director, Domantra Innovations Pvt Ltd",
+          text: "We at Domantra Innovations are extremely satisfied with the company management services provided by Legalvala.Himanshu helped me with my ROC compliances and is always available for better solutions. Highly recommended!",
+          image: "/assets/people/boy (1).png",
+        },
+        {
+          name: "Satish Chauhan",
+          role: "CPPO, Blazing Render Creation Hub LLP",
+          text: "I got my GST registration done through Legalvala, and I am very happy with their service. The team is highly professional and handled everything smoothly. I highly recommend Legalvala for all your legal and business needs!",
+          image: "/assets/people/man-with-glasses.png",
+        },
+        {
+          name: "Mohini Bhadoriya",
+          role: "Director, Startfinity Navigator Pvt Ltd",
+          text: "I availed the Company Registration and Compliance Package from Legalvala. Their pricing was the best in the market, and the entire process was fast, smooth, and transparent. I continue to work with them for their excellent service.",
+          image: "/assets/people/girl (1).png",
+        },
+        {
+          name: "Gajendra Singh",
+          role: "Proprietor, Deepika Enterprises",
+          text: "I am very happy with the GST registration service from Legalvala. Their team was professional, and we received our GST certificate within 4-5 days! Highly recommend them for quick and reliable legal services. Thank you!",
+          image: "/assets/people/boy (2).png",
+        },
+        {
+          name: "Akash Kumar",
+          role: "Relationship Manager, HDFC Bank Ltd",
+          text: "I got my Income Tax Return filed through Legalvala, and it was a great experience! The process was quick, hassle-free, and transparent. Their team is highly professional and supportive. Definitely a 5-star experience!",
+          image: "/assets/people/boy.png",
+        },
+        {
+          name: "Charan Singh",
+          role: "Owner, PTSK Traders",
+          text: "I got my GST Registration and GST Return Filing done through Legalvala, and their service has been excellent! Their team is highly professional and efficient. They continue to handle my GST filings with great expertise.",
+          image: "/assets/people/man-with-glasses.png",
+        },
+        {
+          name: "Dr Arul Ghandhi",
+          role: "Director, Narmada Exploration & Mining Pvt Ltd",
+          text: "I got ISO 9001, ISO 14001, and OEM certificates for my company from Legalvala. Their service was outstanding! After facing a scam elsewhere, Legalvala regained my trust. Special thanks to Himanshu Ji for handling everything smoothly.",
+          image: "/assets/people/boy.png",
+        },
+      ];
+      
 
   const team = [
     {
