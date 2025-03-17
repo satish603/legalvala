@@ -650,3 +650,11 @@ footer h6 {
 .close-modal:hover {
   color: red;
 }
+.team .card img {
+  width: 120px;  /* Set a fixed width */
+  height: 120px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Ensures images are cropped properly */
+  border-radius: 50%; /* Makes the image circular */
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+}

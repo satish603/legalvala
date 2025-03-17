@@ -53,23 +53,28 @@ const AboutUs = () => {
       ];
       
 
-  const team = [
-    {
-      name: "Amit Sharma",
-      role: "Founder & CEO",
-      image: "/assets/team1.png",
-    },
-    {
-      name: "Neha Verma",
-      role: "Legal Consultant",
-      image: "/assets/team2.png",
-    },
-    {
-      name: "Rajesh Gupta",
-      role: "Taxation Expert",
-      image: "/assets/team3.png",
-    },
-  ];
+      const team = [
+        {
+          name: "Mr. Himanshu",
+          role: "Manager / Sr. Consultant / Director",
+          about: "Mr. Himanshu is the Senior Consultant and Manager at LEGALVALA. With over five years of experience in the legal field, he specializes in business compliance and legal advisory. He holds a Bachelor of Business Administration from DBRAU Agra and is currently pursuing CMA from the ICMAI Institute.",
+          image: "/assets/people/himanshu.jpeg",
+        },
+        {
+          name: "Mr. Gajendra Singh",
+          role: "Founder / CEO",
+          about: "Mr. Gajendra Singh is the Founder and CEO of LEGALVALA. With over 15 years of experience in legal services and business management, he has helped numerous businesses achieve compliance and operational efficiency. He holds a Bachelor of Commerce degree from DBRAU.",
+          image: "/assets/people/gajedra.jpeg",
+        },
+        {
+          name: "Mrs. Sakshi Katariya",
+          role: "Human Resources & Consultant",
+          about: "Mrs. Sakshi Katariya is the HR & Consultant at LEGALVALA, responsible for managing the team and overseeing compliance processes. With over three years of experience in human resources and consulting, she has been recognized with the 'Best Consultant' award from LEGALVALA for her outstanding contributions.",
+          image: "/assets/people/sakshi.jpeg",
+        },
+      ];
+      
+      
 
   const settings = {
     dots: true,
@@ -162,14 +167,16 @@ const AboutUs = () => {
           {team.map((member, index) => (
             <div key={index} className="col-md-4 p-3">
               <div className="card shadow-sm p-3">
-                <img src={member.image} alt={member.name} className="rounded-circle mb-3" width="80" />
+                <img src={member.image} alt={member.name} className="team-img" width="80" />
                 <h6 className="fw-bold">{member.name}</h6>
                 <p className="text-muted">{member.role}</p>
+                <p className="small">{member.about}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
+
     </div>
   );
 };
