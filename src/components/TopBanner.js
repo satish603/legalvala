@@ -25,7 +25,7 @@ const TopBanner = () => {
               className="banner-icon pe-2"
               size="1x"
             />
-            Info@legalvala.com
+            legalvalaa@gmail.com
           </div>
           <div className="col col-md-4 col-sm-12 text-center">
             <FontAwesomeIcon
