@@ -6,9 +6,9 @@ import ContactForm from "../components/ContactForm";
 const services = [
   { name: "GST REGISTRATION", price: "1499", image: "/assets/product/1.png", description: "Get your GST registered and start your business legally in India." },
   { name: "MSME REGISTRATION", price: "999", image: "/assets/product/2.png", description: "Avail benefits under the MSME scheme for small and medium businesses." },
-  { name: "PRIVATE LIMITED COMPANY REGISTRATION", price: "7999", image: "/assets/product/3.png", description: "Incorporate a Private Limited Company with ease." },
-  { name: "OPC COMPANY REGISTRATION", price: "5999", image: "/assets/product/4.png", description: "Register your One Person Company and get limited liability benefits." },
-  { name: "LLP COMPANY REGISTRATION", price: "6999", image: "/assets/product/5.png", description: "Start your Limited Liability Partnership (LLP) with complete legal support." },
+  { name: "PRIVATE LIMITED COMPANY REGISTRATION", price: "7999", image: "/assets/product/4.png", description: "Incorporate a Private Limited Company with ease." },
+  { name: "OPC COMPANY REGISTRATION", price: "5999", image: "/assets/product/5.png", description: "Register your One Person Company and get limited liability benefits." },
+  { name: "LLP COMPANY REGISTRATION", price: "6999", image: "/assets/product/3.png", description: "Start your Limited Liability Partnership (LLP) with complete legal support." },
   { name: "PUBLIC LIMITED COMPANY REGISTRATION", price: "14999", image: "/assets/product/6.png", description: "Form a Public Limited Company and expand your business reach." },
   { name: "SECTION 8 COMPANY REGISTRATION", price: "7999", image: "/assets/product/7.png", description: "Register your non-profit organization under Section 8." },
   { name: "NGO REGISTRATION", price: "6999", image: "/assets/product/8.png", description: "Start an NGO legally and get the necessary approvals." },

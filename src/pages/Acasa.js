@@ -15,7 +15,7 @@ const Acasa = () => {
       <div className="home-page">
         <Helmet>
           <title>LegalVala | Legal & Business Solutions</title>
-          
+
           <meta
             name="description"
             content="LegalVala offers professional legal, tax, and business consultancy services, ensuring compliance and growth for individuals and businesses."
@@ -68,7 +68,7 @@ const Acasa = () => {
                   </Link>
                 </div>
                 <div className="col flex-grow-1">
-                  <Link to="/informatii-utile">
+                  <Link to="/avocatura">
                     <button
                       className="btn btn-lg btn-outline-dark type-button p-4 w-100 fw-bold"
                       aria-label="Our Services"
@@ -130,15 +130,15 @@ const Acasa = () => {
               <div className="card-body">
                 <h6 className="guide-text mb-4">INTRODUCTION</h6>
                 <h5 className="lh-base text-center pb-4">
-                  Facing Legal or Business Challenges?
+                  <strong>Facing Legal or Business Challenges?</strong>
                 </h5>
 
                 <p className="text-separator fw-normal text-center px-3">
-  At <strong>LegalVala</strong>, we provide expert guidance in legal, tax, and business compliance. 
-  Our goal is to <strong>simplify complexities</strong> so you can focus on growth.
-  Whether you're an <strong>entrepreneur</strong>, a <strong>startup</strong>, or an <strong>established business</strong>, 
-  we ensure your legal and business needs are met with precision and expertise.
-</p>
+                  At <strong>LegalVala</strong>, we provide expert guidance in legal, tax, and business compliance.
+                  Our goal is to <strong>simplify complexities</strong> so you can focus on growth.
+                  Whether you're an <strong>entrepreneur</strong>, a <strong>startup</strong>, or an <strong>established business</strong>,
+                  we ensure your legal and business needs are met with precision and expertise.
+                </p>
 
               </div>
             </div>
@@ -160,7 +160,7 @@ const Acasa = () => {
         <section className="recommendation p-3 bg-image m-3 px-0">
           <h6 className="guide-text ">OUR EXPERTISE</h6>
           <div className="container d-flex flex-column justify-content-center align-items-center">
-            <h5 className="h-50 lh-base text-center pb-4">Why Choose LEGALVALA?</h5>
+            <h5 className="h-50 lh-base text-center pb-4"><strong>Why Choose LEGALVALA?</strong></h5>
           </div>
           <div className="row mt-4 flex-column flex-md-row mb-3">
             <div className="col col-md-7 order-md-2">
@@ -184,7 +184,7 @@ const Acasa = () => {
             </div>
           </div>
         </section>
-               
+
 
       </div>
     </>

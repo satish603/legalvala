@@ -26,7 +26,7 @@ const Footer = () => {
                   height="50"
                 />
                 <img
-                  src="/assets/component.png"
+                  src="/assets/legalvala-top.png"
                   className="img-fluid px-4 logo-text"
                   alt="LegalVala"
                   width="150"
