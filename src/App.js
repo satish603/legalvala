@@ -47,7 +47,7 @@ function App() {
             </title>
             <meta
               name="BRC Hub LLP"
-              content="This Page is Developed by Blazing Render Creation Hub LLP"
+              content="This Page is Developed by Blazing Render Creation Hub LLP https://brchub.vercel.app/"
             />
           </Helmet>
           <Navbar />
