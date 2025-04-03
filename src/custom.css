@@ -488,7 +488,8 @@ footer h6 {
 }
 .form-wrap {
   position: relative;
-  background-image: url("/public/assets/column-form.png");
+  /*background-image: url("/public/assets/column-form.png");*/
+  background-color: #042b4e5e;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
