@@ -160,7 +160,7 @@ footer h6 {
 }
 
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.814);
   position: absolute;
   top: 0;
   left: 0;
@@ -183,7 +183,7 @@ footer h6 {
 }
 
 .text-2 {
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 .text-2 span {
@@ -193,10 +193,10 @@ footer h6 {
 
 .text-3 {
   color: #ebe2d6ff;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   padding-top: 3rem;
   line-height: 1.8rem;
-  width: 60%;
+  width: 100%;
 }
 
 .text-3 span {
@@ -286,7 +286,7 @@ footer h6 {
 /* services */
 
 .services-section {
-  background-image: url("/public/assets/column-services.webp");
+  background-image: url("/public/assets/column-services.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -488,7 +488,7 @@ footer h6 {
 }
 .form-wrap {
   position: relative;
-  background-image: url("/public/assets/column-form.webp");
+  background-image: url("/public/assets/column-form.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

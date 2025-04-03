@@ -27,7 +27,7 @@ const Acasa = () => {
             <div className="hero-section">
               <div className="hero-overlay"></div>
               <div className="text-container d-flex flex-column justify-content-start align-items-start pt-6 slide">
-                <div className="text-1 fs-2 pb-3">LegalVala</div>
+                <div className="text-1 fs-1 pb-3">LEGALVALA</div>
                 <div className="text-2 fs-4">
                   YOUR TRUSTED LEGAL & BUSINESS ADVISOR
                   <span className="fw-bold">
