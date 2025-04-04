@@ -80,12 +80,12 @@
 }
 
 .nav .logo-image {
-  max-width: 70px;
+  max-width: 200px;
 }
 
 .nav .logo-text {
   max-width:500px;
-  margin-left: -1.5rem;
+  margin-left: -2.3rem;
 }
 
 .nav .slide-in {
@@ -109,32 +109,52 @@ footer {
   background-color: #02182b;
   color: #e7eaef;
   font-size: 0.8rem;
+  text-align: left;
 }
 footer .logo-text {
   max-width: 150px;
+  text-align: left;
 }
 
-footer .logo-image {
+/* footer .logo-image {
   max-width: 50px;
-}
+} */
 
 footer .logo-text {
-  max-width: 150px;
+  max-width: 170px;
   margin-left: -1.5rem;
+  text-align: left;
 }
 footer .content {
   color: #c2b697;
 }
+p, div {
+  text-align: left;
+}
+
 .contact-icon {
   color: #be7413;
   font-size: large;
+  text-align: left;
+  
 }
+
 .contact-icon:hover {
   color: #c2b697;
+  text-align: left;
 }
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns content to the left */
+  text-align: left !important;
+}
+
 footer h6 {
   color: #c2b697;
 }
+
 /* .scroll-to-top {
   color: #e7eaef;
   background-color: transparent;
@@ -172,7 +192,7 @@ footer h6 {
   position: relative;
   z-index: 1;
   margin-top: 8rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .text-1,
@@ -514,7 +534,11 @@ footer h6 {
 }
 
 .contact-text {
-  margin-top: 2rem;
+ 
+  text-align: left !important;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
 }
 
 .form-wrap .btn {
@@ -526,7 +550,7 @@ footer h6 {
 }
 
 .contact-page p {
-  text-indent: 1rem;
+  text-indent: .01rem;
 }
 
 /* INFORMATII UTILE====================== */
@@ -627,7 +651,7 @@ footer h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .modal-content {
@@ -641,11 +665,11 @@ footer h6 {
 
 .close-modal {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 24px;
+  top: 5px;
+  right: 1px;
+  font-size: 40px;
   cursor: pointer;
-  color: #333;
+  color: #ffffff;
 }
 
 .close-modal:hover {
