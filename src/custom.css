@@ -114,16 +114,18 @@ footer {
 footer .logo-text {
   max-width: 150px;
   text-align: left;
+  
 }
 
 /* footer .logo-image {
-  max-width: 50px;
+  max-width: 250px;
 } */
 
 footer .logo-text {
-  max-width: 170px;
-  margin-left: -1.5rem;
+  max-width: 200px;
+  margin-left: -2rem;
   text-align: left;
+  max-height: 50;
 }
 footer .content {
   color: #c2b697;
@@ -163,7 +165,7 @@ footer h6 {
 .copyright {
   font-size: 0.7rem;
   color: rgb(222, 217, 217);
-}
+  }
 
 /* ACASA====================== */
 

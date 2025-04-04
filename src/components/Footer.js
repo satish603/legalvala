@@ -49,9 +49,9 @@ const Footer = () => {
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     className="contact-icon"
-                    title="legalvalaa@gmail.com"
+                    title="info@legalvala.com"
                   />
-                  <span className="fw-light px-2">legalvalaa@gmail.com</span>
+                  <span className="fw-light px-2">info@legalvala.com</span>
                 </span>
               </div>
               <div className="mt-3 d-flex align-items-center justify-content-center flex-column">
