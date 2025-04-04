@@ -17,10 +17,10 @@ function App() {
   const [showModal, setShowModal] = useState(true);
   const [selectedService, setSelectedService] = useState("");
 
-  const openModal = (serviceName) => {
-    setSelectedService(`Hello, I am interested in ${serviceName}. Please provide me with more details.`);
-    setShowModal(true);
-  };
+  // const openModal = (serviceName) => {
+  //   setSelectedService(`Hello, I am interested in ${serviceName}. Please provide me with more details.`);
+  //   setShowModal(true);
+  // };
 
   const closeModal = () => {
     setShowModal(false);
