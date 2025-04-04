@@ -18,18 +18,18 @@ const Footer = () => {
             {/* Logo Section */}
             <div className="col-md-4 ps-4 mx-auto text-center">
               <span className="">
-                <img
+                {/* <img
                   src="/assets/Badaposter.png"
                   className="img-fluid logo-image me-1"
                   alt="LegalVala logo"
                   width="50"
                   height="50"
-                />
+                /> */}
                 <img
                   src="/assets/legalvala-top.png"
                   className="img-fluid px-4 logo-text"
                   alt="LegalVala"
-                  width="150"
+                  width="250"
                   height="100"
                 />
               </span>
@@ -84,9 +84,9 @@ const Footer = () => {
                   Monday – Saturday: 9 AM – 7 PM <br />
                   Sunday: Closed
                 </p>
-                <a href="/sitemap.xml" className="">
+                {/* <a href="/sitemap.xml" className="">
                   Sitemap
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

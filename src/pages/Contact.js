@@ -100,7 +100,7 @@ export const Contact = () => {
                   Reach Out for Expert Assistance!
                 </h5>
                 <p>
-                  Whether you need legal consultation, business registration, or compliance support, we are here to assist you.{" "}
+                Whether you need legal consultation, business registration, or compliance support, we are here to assist you{" "}
                 </p>
                 <p>
                   Fill out the contact form below, and one of our experts will get back to you shortly.
