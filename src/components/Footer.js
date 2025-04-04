@@ -124,7 +124,7 @@ const Footer = () => {
         <div>
           <div className="bg-dark d-flex align-items-center justify-content-center">
             <hr></hr>
-            <p className="copyright mb-0">©2025 LegalVala</p>
+            <p className="copyright mb-0">All rights reserved © 2025 | LegalVala Consultancy LLP</p>
           </div>
         </div>
       </footer>
