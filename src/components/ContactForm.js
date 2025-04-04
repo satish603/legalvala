@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import emailjs from "@emailjs/browser";
 
 const ContactForm = ({ defaultMessage = "" }) => {
   const [status, setStatus] = useState("Send Message");
@@ -13,41 +12,48 @@ const ContactForm = ({ defaultMessage = "" }) => {
     setQuery(defaultMessage);
   }, [defaultMessage]);
 
-  const sendMail = () => {
-    const params = {
-      name,
-      email,
-      phone,
+  const sendMail = async () => {
+    // Map phone to mobile as per API payload requirements
+    const payload = {
+      name: name,
+      email: email,
+      mobile: phone,
       message: query,
     };
-    const serviceID = process.env.REACT_APP_SERVICE_ID;
-    const templateID = process.env.REACT_APP_TEMPLATE_ID;
-    const userID = process.env.REACT_APP_USER_ID;
 
-    emailjs.send(serviceID, templateID, params, userID).then(
-      (response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        setStatus("Send Message");
+    try {
+      const response = await fetch("https://email-service-ytdv.onrender.com/send/mail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (response.ok) {
+        console.log("SUCCESS!", response);
         alert("Your message has been sent successfully!");
-
         // Clear input fields after successful submission
         setName("");
         setEmail("");
         setPhone("");
         setQuery(defaultMessage);
-      },
-      (error) => {
-        console.log("FAILED...", error);
-        setStatus("Send Message");
+      } else {
+        console.log("FAILED...", response);
         alert("Something went wrong. Please try again later.");
       }
-    );
+    } catch (error) {
+      console.error("FAILED...", error);
+      alert("Something went wrong. Please try again later.");
+    } finally {
+      setStatus("Send Message");
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
-    sendMail();
+    await sendMail();
   };
 
   return (
