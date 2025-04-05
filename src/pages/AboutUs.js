@@ -136,27 +136,28 @@ const AboutUs = () => {
       </section>
 
       {/* OUR EXPERTISE */}
-      <section className="container py-5">
-        <h6 className="guide-text">OUR EXPERTISE</h6>
-        <h5 className="text-center pb-3"><strong>What We Specialize In</strong></h5>
-        <div className="row text-center">
-          <div className="col-md-4">
-            <FontAwesomeIcon icon={faGavel} size="3x" className="mb-3 text-primary" />
-            <h6>Corporate & Business Law</h6>
-            <p>Company formation, contracts, and regulatory compliance.</p>
-          </div>
-          <div className="col-md-4">
-            <FontAwesomeIcon icon={faLightbulb} size="3x" className="mb-3 text-warning" />
-            <h6>Intellectual Property</h6>
-            <p>Trademark, copyright, and patent registration services.</p>
-          </div>
-          <div className="col-md-4">
-            <FontAwesomeIcon icon={faHandshake} size="3x" className="mb-3 text-success" />
-            <h6>Tax & Compliance</h6>
-            <p>GST registration, tax filing, and financial advisory.</p>
-          </div>
-        </div>
-      </section>
+<section className="container py-5">
+  <h6 className="guide-text">OUR EXPERTISE</h6>
+  <h5 className="text-center pb-3"><strong>What We Specialize In</strong></h5>
+  <div className="row text-center">
+    <div className="col-md-4 d-flex flex-column align-items-center">
+      <FontAwesomeIcon icon={faGavel} size="3x" className="mb-3 text-primary" />
+      <h6 className="text-center">Corporate & Business Law</h6>
+      <p className="text-center">Company formation, contracts, and regulatory compliance.</p>
+    </div>
+    <div className="col-md-4 d-flex flex-column align-items-center">
+      <FontAwesomeIcon icon={faLightbulb} size="3x" className="mb-3 text-warning" />
+      <h6 className="text-center">Intellectual Property</h6>
+      <p className="text-center">Trademark, copyright, and patent registration services.</p>
+    </div>
+    <div className="col-md-4 d-flex flex-column align-items-center">
+      <FontAwesomeIcon icon={faHandshake} size="3x" className="mb-3 text-success" />
+      <h6 className="text-center">Tax & Compliance</h6>
+      <p className="text-center">GST registration, tax filing, and financial advisory.</p>
+    </div>
+  </div>
+</section>
+
 
       {/* TESTIMONIALS */}
       <section className="testimonials p-3 bg-light m-3 px-0">
@@ -180,7 +181,8 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* OUR TEAM */}
+           {/* OUR TEAM (COMMENTED OUT) */}
+      {/*
       <section className="team p-3 container">
         <h6 className="guide-text text-center">MEET OUR TEAM</h6>
         <h5 className="text-center pb-3"><strong>The Experts Behind LEGALVALA</strong></h5>
@@ -188,14 +190,7 @@ const AboutUs = () => {
           {team.map((member, index) => (
             <div key={index} className="col-md-4 p-3">
               <div className="card shadow-sm p-3">
-                {/* <img src={member.image} alt={member.name} className="team-img" width="100" /> */}
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  width="100"
-                  height="120"
-                  style={{ borderRadius: "0" }}
-                />
+                <img src={member.image} alt={member.name} width="100" height="120" style={{ borderRadius: "0" }} />
                 <h6 className="fw-bold">{member.name}</h6>
                 <p className="text-muted">{member.role}</p>
                 <p className="small">{member.about}</p>
@@ -204,6 +199,8 @@ const AboutUs = () => {
           ))}
         </div>
       </section>
+      */}
+
 
     </div>
   );

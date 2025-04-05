@@ -31,9 +31,10 @@ const Footer = () => {
                   alt="LegalVala"
                   width="250"
                   height="100"
+                  style={{ marginTop: '-25px' }}
                 />
               </span>
-              <p className="content pt-3 px-3">
+              <p className="content mt-n4 px-1">
                 LegalVala is your trusted partner in business
                 and legal matters in India. We specialize in company
                 registrations, GST compliance, tax filings, and regulatory
@@ -55,11 +56,12 @@ const Footer = () => {
                 </span>
               </div>
               <div className="mt-3 d-flex align-items-center justify-content-center flex-column">
-                <span className="d-flex align-items-center">
+                <span className="d-flex align-items-">
                   <FontAwesomeIcon
                     icon={faPhone}
                     className="contact-icon"
                     title="+91 73026 58311"
+                    style={{ marginLeft: '-11px' }} 
                   />
                   <span className="px-2 fw-light">+91 73026 58311</span>
                 </span>
