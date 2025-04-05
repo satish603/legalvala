@@ -53,8 +53,8 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Acasa />} />
-            <Route path="/informatii-utile" element={<Info />} />
-            <Route path="/avocatura" element={<Avocatura />} />
+            <Route path="/gst-tax-compliance" element={<Info />} />
+            <Route path="/services" element={<Avocatura />} />
             <Route path="/insolventa" element={<Insolventa />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/AboutUs" element={<AboutUs />} />
