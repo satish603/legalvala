@@ -2,8 +2,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGavel, faLightbulb, faHandshake } from "@fortawesome/free-solid-svg-icons";
-import "S:/Git Projects/legalvala/src/slick-carousel/slick/slick.css";
-import "S:/Git Projects/legalvala/src/slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const AboutUs = () => {
