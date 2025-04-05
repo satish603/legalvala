@@ -685,3 +685,9 @@ footer h6 {
   display: block;
   margin: 0 auto; /* Centers the image horizontally */
 }
+.slick-arrow.slick-next:before {
+  color: black !important;
+}
+.slick-arrow.slick-prev:before {
+  color: black !important;
+}

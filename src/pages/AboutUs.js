@@ -1,8 +1,9 @@
-
 import React from "react";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGavel, faLightbulb, faHandshake } from "@fortawesome/free-solid-svg-icons";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const AboutUs = () => {
@@ -51,7 +52,7 @@ const AboutUs = () => {
     },
   ];
 
-// eslint-disable-next-line
+
   const team = [
     {
       name: "Mr. Himanshu",
@@ -168,7 +169,7 @@ const AboutUs = () => {
                 <div className="card shadow-sm p-3">
                   <p className="testimonial-text">"{testimonial.text}"</p>
                   <div className="d-flex align-items-center justify-content-center mt-3">
-                    <img src={testimonial.image} alt={testimonial.name} className="rounded-circle" width="60" />
+                    <img src={testimonial.image} alt={testimonial.name} className="rounded-circle " width="60" />
                   </div>
                   <h6 className="fw-bold mt-2">{testimonial.name}</h6>
                   <p className="text-muted">{testimonial.role}</p>
@@ -179,8 +180,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* OUR TEAM (COMMENTED OUT) */}
-      {/*
+      {/* OUR TEAM */}
       <section className="team p-3 container">
         <h6 className="guide-text text-center">MEET OUR TEAM</h6>
         <h5 className="text-center pb-3"><strong>The Experts Behind LEGALVALA</strong></h5>
@@ -188,7 +188,14 @@ const AboutUs = () => {
           {team.map((member, index) => (
             <div key={index} className="col-md-4 p-3">
               <div className="card shadow-sm p-3">
-                <img src={member.image} alt={member.name} width="100" height="120" style={{ borderRadius: "0" }} />
+                {/* <img src={member.image} alt={member.name} className="team-img" width="100" /> */}
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  width="100"
+                  height="120"
+                  style={{ borderRadius: "0" }}
+                />
                 <h6 className="fw-bold">{member.name}</h6>
                 <p className="text-muted">{member.role}</p>
                 <p className="small">{member.about}</p>
@@ -197,7 +204,6 @@ const AboutUs = () => {
           ))}
         </div>
       </section>
-      */}
 
     </div>
   );
