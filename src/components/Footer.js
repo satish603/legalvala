@@ -126,7 +126,7 @@ const Footer = () => {
         <div>
           <div className="bg-dark d-flex align-items-center justify-content-center">
             <hr></hr>
-            <p className="copyright mb-0">All rights reserved © 2025 | LegalVala Consultancy LLP</p>
+            <p className="copyright mb-0">All rights reserved © 2025 | LVCLegalVala Consultancy LLP | This Website is Developed by <strong><a href="https://www.thebrchub.com" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline" }}>BRC Hub LLP</a></strong></p>
           </div>
         </div>
       </footer>
