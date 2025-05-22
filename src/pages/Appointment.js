@@ -109,11 +109,7 @@ const Appointment = () => {
           )}
         </div>
         </div>
-
-
       
-
-
         {/* Right: Appointment Form */}
         <form onSubmit={handleSubmit} className="appointment-form" style={{ flex: "2" }}>
         <label>Select Date:</label>

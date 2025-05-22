@@ -851,3 +851,22 @@ footer h6 {
   align-content: center;
   text-align: center;
 }
+.appointment-success-wrapper {
+  background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+  padding: 2rem;
+}
+
+.appointment-success-card {
+  max-width: 600px;
+  margin: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.checkmark-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
