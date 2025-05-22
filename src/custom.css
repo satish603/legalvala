@@ -691,3 +691,10 @@ footer h6 {
 .slick-arrow.slick-prev:before {
   color: black !important;
 }
+.appointment-page {
+  max-width: 800px;
+}
+
+.time-slots button {
+  min-width: 100px;
+}
