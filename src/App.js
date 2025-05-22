@@ -16,6 +16,8 @@ import AppointmentSuccess from "./pages/AppointmentSuccess";
 
 
 
+
+
 function App() {
 
   const [showModal, setShowModal] = useState(true);
@@ -45,10 +47,8 @@ function App() {
       </>
       <>
         <BrowserRouter>
-          <Helmet>
-            <title>
-              Blazing Render Creation Hub LLP
-            </title>
+               <Helmet>
+            <title>Blazing Render Creation Hub LLP</title>
             <meta
               name="BRC Hub LLP"
               content="This Page is Developed by Blazing Render Creation Hub LLP https://brchub.vercel.app/"
@@ -62,10 +62,9 @@ function App() {
             <Route path="/insolventa" element={<Insolventa />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/AboutUs" element={<AboutUs />} />
-            <Route path="*" element={<ErrorPage />} />
-            {/* // Inside your Routes */}
             <Route path="/appointment" element={<Appointment />} />
             <Route path="/appointment-success" element={<AppointmentSuccess />} />
+            <Route path="*" element={<ErrorPage />} />
           </Routes>
           <Footer />
         </BrowserRouter>

@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { format } from "date-fns";
+
 // import "./Appointment.css";
+
 
 const Appointment = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -39,6 +42,7 @@ const Appointment = () => {
       [e.target.name]: e.target.value,
     }));
   };
+  const [showTerms, setShowTerms] = useState(false);
 
   return (
     <div className="appointment-wrapper">
@@ -69,20 +73,61 @@ const Appointment = () => {
             <li>IEC Code</li>
             <li>All Business Related Query Resolution</li>
           </ul>
-          <p><strong>Address:</strong><br />131, Jawahar Puram Phase -1,<br />Shahganj, Agra, Uttar Pradesh 282010</p>
+          <p style={{ fontStyle: "italic" }}>
+  <strong>Address:</strong><br />
+  131, Jawahar Puram Phase -1,<br />
+  Shahganj, Agra, Uttar Pradesh 282010
+</p>
+
+            {/* Terms & Conditions Toggle */}
+        <div style={{ marginTop: "1rem" }}>
+          <button
+            onClick={() => setShowTerms((prev) => !prev)}
+            style={{
+              backgroundColor: "#2d6da5",
+              color: "white",
+              border: "none",
+              padding: "0.5rem 1rem",
+              borderRadius: "0.5rem",
+              cursor: "pointer"
+            }}
+          >
+            {showTerms ? "Hide Terms & Conditions" : "View Terms & Conditions"}
+          </button>
+
+          {showTerms && (
+            <ul style={{ marginTop: "1rem", paddingLeft: "1.2rem", color: "white", fontSize: "0.9rem", lineHeight: "1.6" }}>
+              <li>Please confirm your appointment using the "Confirm Appointment" button provided below.</li>
+              <li>In case of any booking issues, kindly reach out to us immediately for assistance.</li>
+              <li>Appointments are not available on Sundays, as it is a weekly holiday.</li>
+              <li>A short break will be observed after every 6 consecutive appointments.</li>
+              <li>A nominal consultation fee of ₹600 is applicable for each 15-minute session.</li>
+              <li>All consultations are strictly confidential and conducted by qualified professionals.</li>
+              <li>For urgent legal matters, priority time slots may be arranged upon request.</li>
+              <li>Himanshu is available for consultations between 11:00 AM and 4:30 PM.</li>
+            </ul>
+          )}
         </div>
+        </div>
+
+
+      
+
 
         {/* Right: Appointment Form */}
         <form onSubmit={handleSubmit} className="appointment-form" style={{ flex: "2" }}>
-          <label>Select Date:</label>
+        <label>Select Date:</label>
           <DatePicker
             selected={selectedDate}
             onChange={(date) => setSelectedDate(date)}
             minDate={new Date()}
             placeholderText="Choose a date"
             className="form-control"
+            dateFormat="dd/MM/yyyy" // ✅ DD/MM/YYYY format
+            filterDate={(date) => date.getDay() !== 0} // ✅ Disable Sundays
             required
           />
+
 
           <label>Select Time:</label>
           <div className="time-slots">

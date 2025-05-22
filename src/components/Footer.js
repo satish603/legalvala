@@ -60,10 +60,10 @@ const Footer = () => {
                   <FontAwesomeIcon
                     icon={faPhone}
                     className="contact-icon"
-                    title="+91 73026 58311"
+                    title="+91 8864885831"
                     style={{ marginLeft: '-11px' }} 
                   />
-                  <span className="px-2 fw-light">+91 73026 58311</span>
+                  <span className="px-2 fw-light">+91 88648 85831</span>
                 </span>
               </div>
               <div className="mt-3 d-flex align-items-center justify-content-center flex-column">
@@ -97,7 +97,7 @@ const Footer = () => {
         {/* WhatsAppWidget */}
         <div>
           <WhatsAppWidget
-            phoneNo="+917302658311"
+            phoneNo="+918864885831"
             position="right"
             iconSize="50"
             iconColor="white"
