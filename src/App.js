@@ -12,6 +12,7 @@ import ErrorPage from "./pages/ErrorPage";
 import AboutUs from "./pages/AboutUs";
 import ContactForm from "./components/ContactForm";
 import Appointment from "./pages/Appointment";
+import AppointmentSuccess from "./pages/AppointmentSuccess";
 
 
 

@@ -691,8 +691,8 @@ footer h6 {
 .slick-arrow.slick-prev:before {
   color: black !important;
 }
-/* APPOINTMENT ====================== */
-.appointment-container {
+/* WRAPPER & TITLE */
+.appointment-wrapper {
   background-color: #0a2a47;
   color: #e7eaef;
   padding: 2rem;
@@ -710,67 +710,21 @@ footer h6 {
   text-align: center;
 }
 
-/* Form Layout */
+/* FORM SECTION */
 .appointment-form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .appointment-form label {
   font-weight: bold;
   color: #ebe2d6;
-  margin-bottom: 0.25rem;
 }
 
-/* Date Picker */
+/* INPUTS */
+.appointment-form input,
 .appointment-form .form-control {
-  padding: 0.6rem;
-  font-size: 1rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  color: #000;
-  background-color: #fff;
-  width: 100%;
-}
-
-.appointment-form .form-control:focus {
-  outline: none;
-  border-color: #c2b697;
-  box-shadow: 0 0 5px #c2b69788;
-}
-
-/* Time Slots */
-.time-slots {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.time-slots .btn {
-  padding: 0.5rem 1rem;
-  font-size: 0.95rem;
-  border: 1px solid #ffffff;
-  border-radius: 6px;
-  background-color: transparent;
-  color: #ffffff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.time-slots .btn:hover {
-  background-color: #2d6da5;
-  color: #fff;
-}
-
-.time-slots .btn-primary {
-  background-color: #2d6da5;
-  color: #fff;
-  border-color: #2d6da5;
-}
-
-/* Inputs */
-.appointment-form input {
   padding: 0.75rem;
   font-size: 1rem;
   border: 1px solid #ccc;
@@ -780,32 +734,41 @@ footer h6 {
   width: 100%;
 }
 
-.appointment-form input:focus {
+.appointment-form input:focus,
+.appointment-form .form-control:focus {
   outline: none;
   border-color: #c2b697;
   box-shadow: 0 0 5px #c2b69788;
 }
 
-/* Grid Layout for Inputs */
-.appointment-form input[name="name"],
-.appointment-form input[name="email"],
-.appointment-form input[name="phone"],
-.appointment-form input[name="reason"] {
-  width: 100%;
-}
-
-.appointment-form .input-row {
+/* TIME SLOTS */
+.time-slots {
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.appointment-form .input-row > input {
-  flex: 1;
-  min-width: 200px;
+.time-slots .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* Submit Button */
+.time-slots .btn:hover {
+  background-color: #2d6da5;
+}
+
+.time-slots .btn-primary {
+  background-color: #2d6da5;
+  border-color: #2d6da5;
+}
+
+/* BUTTON */
 .appointment-form button {
   padding: 0.75rem 1.5rem;
   background-color: #2d6da5;
@@ -822,20 +785,64 @@ footer h6 {
   background-color: #23507c;
 }
 
-/* Confirmation Message */
-.appointment-confirmation {
-  background-color: #e7eaef;
-  color: #02182b;
-  padding: 1.5rem;
-  border-radius: 8px;
+.appointment-note {
   margin-top: 1rem;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-.center-text {
+  font-size: 0.9rem;
+  color: #ccc;
   text-align: center;
 }
+
+/* CLIENT INFO BOX */
+.client-info-box {
+  background-color: #102e50;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #e7eaef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-info-box img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #c2b697;
+}
+
+.client-info-box h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  color: #c2b697;
+}
+
+.client-info-box p {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.client-info-box p:last-child {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* DATEPICKER Z-INDEX */
 .react-datepicker-popper {
-  z-index: 9999 !important; /* ensure it stays on top */
+  z-index: 9999 !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .client-info-box {
+    margin-bottom: 2rem;
+  }
 }
