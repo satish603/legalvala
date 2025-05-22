@@ -55,15 +55,15 @@ const Acasa = () => {
                   </Link>
                 </div>
                 <div className="col flex-grow-1">
-                  <Link to="/contact">
+                  <Link to="/appointment">
                     <button
                       className="btn btn-lg btn-outline-dark type-button p-4 w-100 fw-bold"
-                      aria-label="Request an Evaluation"
+                      aria-label=" Request an Appointment"
                     >
                       <span className="p-3">
                         <FontAwesomeIcon icon={faFileCircleCheck} size="1x" />
                       </span>
-                      Request an Evaluation
+                      Request an Appointment
                     </button>
                   </Link>
                 </div>
@@ -96,15 +96,15 @@ const Acasa = () => {
                   Schedule Consultation
                 </button>
               </Link>
-              <Link to="/contact">
+              <Link to="/appointment">
                 <button
                   className="btn btn-outline-dark type-button p-2 mb-1 btn-md me-1"
-                  aria-label="Request an Evaluation"
+                  aria-label="Request an Appointment"
                 >
                   <span className="p-3">
                     <FontAwesomeIcon icon={faFileCircleCheck} size="1x" />
                   </span>
-                  Request an Evaluation
+                  Request an Appointment
                 </button>
               </Link>
               <Link to="/informatii-utile">

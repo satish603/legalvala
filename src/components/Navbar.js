@@ -98,9 +98,9 @@ const Navbar = () => {
                     GST & Tax Compliance
                   </NavLink>
                 </li>
-                {/* <li className="nav-item mx-3 mb-2">
+                <li className="nav-item mx-3 mb-2">
                   <NavLink
-                    to="/legal-compliance"
+                    to="/appointment"
                     style={({ isActive }) => ({
                       textDecoration: "none",
                       color: isActive ? "#c2b697" : "#fff",
@@ -108,9 +108,9 @@ const Navbar = () => {
                       paddingBottom: isActive ? "5px" : "0",
                     })}
                   >
-                    Legal Compliance
+                    Appointment
                   </NavLink>
-                </li> */}
+                </li>
                 <li className="nav-item mx-3 mb-2">
                   <NavLink
                     to="/AboutUs"

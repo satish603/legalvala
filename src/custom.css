@@ -691,10 +691,151 @@ footer h6 {
 .slick-arrow.slick-prev:before {
   color: black !important;
 }
-.appointment-page {
-  max-width: 800px;
+/* APPOINTMENT ====================== */
+.appointment-container {
+  background-color: #0a2a47;
+  color: #e7eaef;
+  padding: 2rem;
+  max-width: 1300px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.time-slots button {
-  min-width: 100px;
+.appointment-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #c2b697;
+  text-align: center;
+}
+
+/* Form Layout */
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.appointment-form label {
+  font-weight: bold;
+  color: #ebe2d6;
+  margin-bottom: 0.25rem;
+}
+
+/* Date Picker */
+.appointment-form .form-control {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  color: #000;
+  background-color: #fff;
+  width: 100%;
+}
+
+.appointment-form .form-control:focus {
+  outline: none;
+  border-color: #c2b697;
+  box-shadow: 0 0 5px #c2b69788;
+}
+
+/* Time Slots */
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.time-slots .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.time-slots .btn:hover {
+  background-color: #2d6da5;
+  color: #fff;
+}
+
+.time-slots .btn-primary {
+  background-color: #2d6da5;
+  color: #fff;
+  border-color: #2d6da5;
+}
+
+/* Inputs */
+.appointment-form input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  color: #000;
+  width: 100%;
+}
+
+.appointment-form input:focus {
+  outline: none;
+  border-color: #c2b697;
+  box-shadow: 0 0 5px #c2b69788;
+}
+
+/* Grid Layout for Inputs */
+.appointment-form input[name="name"],
+.appointment-form input[name="email"],
+.appointment-form input[name="phone"],
+.appointment-form input[name="reason"] {
+  width: 100%;
+}
+
+.appointment-form .input-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.appointment-form .input-row > input {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Submit Button */
+.appointment-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #2d6da5;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.appointment-form button:hover {
+  background-color: #23507c;
+}
+
+/* Confirmation Message */
+.appointment-confirmation {
+  background-color: #e7eaef;
+  color: #02182b;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.center-text {
+  text-align: center;
+}
+.react-datepicker-popper {
+  z-index: 9999 !important; /* ensure it stays on top */
 }

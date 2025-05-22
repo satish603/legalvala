@@ -11,6 +11,9 @@ import Footer from "./components/Footer";
 import ErrorPage from "./pages/ErrorPage";
 import AboutUs from "./pages/AboutUs";
 import ContactForm from "./components/ContactForm";
+import Appointment from "./pages/Appointment";
+
+
 
 function App() {
 
@@ -59,6 +62,9 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/AboutUs" element={<AboutUs />} />
             <Route path="*" element={<ErrorPage />} />
+            {/* // Inside your Routes */}
+            <Route path="/appointment" element={<Appointment />} />
+            <Route path="/appointment-success" element={<AppointmentSuccess />} />
           </Routes>
           <Footer />
         </BrowserRouter>

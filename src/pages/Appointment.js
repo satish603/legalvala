@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import "../styles/Appointment.css"; // You can style this separately
 
 const Appointment = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -16,20 +15,47 @@ const Appointment = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const timeSlots = [
-    "10:00 AM",
     "11:00 AM",
+    "11:30 AM",
     "12:00 PM",
+    "12:30 PM",
+    "1:00 PM",
+    "1:30 PM",
     "2:00 PM",
+    "2:30 PM",
     "3:00 PM",
+    "3:30 PM",
     "4:00 PM",
+    "4:30 PM",
   ];
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Send this to backend
-    console.log({ ...formData, selectedDate, selectedTime });
-    setSubmitted(true);
+  
+    // Construct a query string with appointment details (optional)
+    const queryParams = new URLSearchParams({
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      reason: formData.reason,
+      date: selectedDate,
+      time: selectedTime,
+    });
+  
+    // Save to localStorage so we can read after redirect
+    localStorage.setItem("appointmentData", JSON.stringify({
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      reason: formData.reason,
+      date: selectedDate,
+      time: selectedTime,
+    }));
+  
+    // Redirect to Razorpay Payment Page
+    window.location.href = "https://razorpay.me/@mahiconsultancy3820"; // replace with actual Razorpay link
   };
+  
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -39,17 +65,17 @@ const Appointment = () => {
   };
 
   return (
-    <div className="appointment-page container my-5">
+    <div className="appointment-container">
       <Helmet>
         <title>Book Appointment | LegalVala</title>
         <meta name="description" content="Book a legal appointment with LegalVala experts." />
       </Helmet>
 
-      <h2 className="text-center mb-4">Book Your Appointment</h2>
+      <h2 className="appointment-title">Book Your Appointment</h2>
 
       {!submitted ? (
         <>
-          <div className="calendar-section mb-4">
+          <form onSubmit={handleSubmit} className="appointment-form">
             <label>Select Date:</label>
             <DatePicker
               selected={selectedDate}
@@ -57,15 +83,15 @@ const Appointment = () => {
               minDate={new Date()}
               placeholderText="Choose a date"
               className="form-control"
+              required
             />
-          </div>
 
-          <div className="time-slots mb-4">
             <label>Select Time:</label>
-            <div className="d-flex flex-wrap gap-2">
+            <div className="time-slots">
               {timeSlots.map((slot) => (
                 <button
                   key={slot}
+                  type="button"
                   className={`btn ${selectedTime === slot ? "btn-primary" : "btn-outline-primary"}`}
                   onClick={() => setSelectedTime(slot)}
                 >
@@ -73,64 +99,51 @@ const Appointment = () => {
                 </button>
               ))}
             </div>
-          </div>
 
-          <form onSubmit={handleSubmit} className="row g-3">
-            <div className="col-md-6">
-              <input
-                type="text"
-                name="name"
-                className="form-control"
-                placeholder="Your Name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="col-md-6">
-              <input
-                type="email"
-                name="email"
-                className="form-control"
-                placeholder="Your Email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="col-md-6">
-              <input
-                type="tel"
-                name="phone"
-                className="form-control"
-                placeholder="Phone Number"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="col-md-6">
-              <input
-                type="text"
-                name="reason"
-                className="form-control"
-                placeholder="Reason for Appointment"
-                value={formData.reason}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="col-12 text-center">
-              <button type="submit" className="btn btn-success">
-                Confirm Appointment
-              </button>
-            </div>
+            <label>Your Name:</label>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+
+            <label>Your Email:</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+
+            <label>Phone Number:</label>
+            <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
+
+            <label>Reason for Appointment:</label>
+            <input
+              type="text"
+              name="reason"
+              value={formData.reason}
+              onChange={handleChange}
+              required
+            />
+
+            <button type="submit">Confirm Appointment</button>
+            <p className="appointment-note"><strong>Please note:</strong> A small fee of ₹10 is charged to confirm your appointment. This helps us ensure commitment and provide better service.</p>
           </form>
         </>
       ) : (
-        <div className="confirmation text-center">
-          <h4 className="text-success mt-5">Appointment Confirmed!</h4>
-          <p>We’ll contact you shortly with the details.</p>
+        <div className="appointment-confirmation">
+          <h4>Appointment Confirmed !</h4>
+          <p class="center-text">We’ll contact you shortly with the details.</p>
         </div>
       )}
     </div>
