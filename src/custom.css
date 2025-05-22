@@ -797,26 +797,27 @@ footer h6 {
   background-color: #102e50;
   padding: 2rem;
   border-radius: 12px;
-  text-align: center;
+  text-align: left;
   color: #e7eaef;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
 }
+
 
 .client-info-box img {
   width: 180px;
   height: 180px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 12px; /* rectangle with rounded corners */
   margin-bottom: 1rem;
   border: 3px solid #c2b697;
 }
 
 .client-info-box h4 {
   font-size: 1.5rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 1rem;
   color: #c2b697;
 }
 
@@ -845,4 +846,8 @@ footer h6 {
   .client-info-box {
     margin-bottom: 2rem;
   }
+}
+.custom-align{
+  align-content: center;
+  text-align: center;
 }

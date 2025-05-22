@@ -12,6 +12,7 @@ const Appointment = () => {
     email: "",
     phone: "",
     reason: "",
+    consultationType: "",
   });
 
   const timeSlots = [
@@ -51,11 +52,24 @@ const Appointment = () => {
       <div className="row" style={{ display: "flex", gap: "2rem", flexWrap: "wrap" }}>
         {/* Left: Client Info */}
         <div className="client-info-box" style={{ flex: "1" }}>
-          <img src="/your-client-image.jpg" alt="Client" />
-          <h4>Adv. Mahi Consultancy</h4>
-          <p>LLB, Corporate Legal Advisor</p>
-          <p>Bangalore, Karnataka</p>
-          <p>Over 10 years of experience in handling civil, criminal, and corporate cases.</p>
+          <img src="/your-client-image.png" alt="Himanshu - Business Consultant" />
+          <h4>Himanshu</h4>
+          <p><strong>Designation:</strong> Business Consultant / Legal Advisor</p>
+          <p><strong>Qualification:</strong> BBA, MBA, and CMA (Pursuing)</p>
+          <p><strong>Contact:</strong> 8864885831</p>
+          <p><strong>Email:</strong> Himanshuagrawal5831@gmail.com</p>
+          <p><strong>About:</strong> Himanshu is a Business Consultant</p>
+          <p><strong>Specializations:</strong></p>
+          <ul style={{ listStyle: "disc", marginLeft: "1.5rem", padding: 0 }}>
+            <li>GST Registration</li>
+            <li>Company Incorporation</li>
+            <li>Company Compliances</li>
+            <li>Legal and Business Advisory</li>
+            <li>ISO Certificate</li>
+            <li>IEC Code</li>
+            <li>All Business Related Query Resolution</li>
+          </ul>
+          <p><strong>Address:</strong><br />131, Jawahar Puram Phase -1,<br />Shahganj, Agra, Uttar Pradesh 282010</p>
         </div>
 
         {/* Right: Appointment Form */}
@@ -95,6 +109,35 @@ const Appointment = () => {
 
           <label>Reason for Appointment:</label>
           <input type="text" name="reason" value={formData.reason} onChange={handleChange} required />
+
+          <label style={{ display: "block", marginBottom: "0.1rem" }}>Consultation Type:</label>
+            <div style={{ display: "flex", gap: "2rem", alignItems: "center", marginBottom: "1rem" }}>
+              <label style={{ display: "flex", alignItems: "center", gap: "0.5rem", cursor: "pointer" }}>
+                <input
+                  type="radio"
+                  name="consultationType"
+                  value="Online"
+                  checked={formData.consultationType === "Online"}
+                  onChange={handleChange}
+                  style={{ accentColor: "#007BFF" }} // Customize this color if needed
+                />
+                <span>Online</span>
+              </label>
+
+              <label style={{ display: "flex", alignItems: "center", gap: "0.5rem", cursor: "pointer" }}>
+                <input
+                  type="radio"
+                  name="consultationType"
+                  value="Offline"
+                  checked={formData.consultationType === "Offline"}
+                  onChange={handleChange}
+                  style={{ accentColor: "#007BFF" }}
+                />
+                <span>Offline</span>
+              </label>
+            </div>
+
+
 
           <button type="submit">Confirm Appointment</button>
           <p className="appointment-note">
