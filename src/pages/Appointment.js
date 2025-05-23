@@ -168,7 +168,8 @@ const Appointment = () => {
 
           <label style={{ display: "block", marginBottom: "0.1rem" }}>Consultation Type:</label>
             <div style={{ display: "flex", gap: "2rem", alignItems: "center", marginBottom: "1rem" }}>
-              <label style={{ display: "flex", alignItems: "center", gap: "0.5rem", cursor: "pointer" }}>
+              <p>The consultation will be conducted <strong>ONLINE</strong>. Detailed information will be provided upon confirmation of the appointment.</p>
+              {/* <label style={{ display: "flex", alignItems: "center", gap: "0.5rem", cursor: "pointer" }}>
                 <input
                   type="radio"
                   name="consultationType"
@@ -190,7 +191,7 @@ const Appointment = () => {
                   style={{ accentColor: "#007BFF" }}
                 />
                 <span>Offline</span>
-              </label>
+              </label> */}
             </div>
 
 
