@@ -47,13 +47,56 @@ function App() {
       </>
       <>
         <BrowserRouter>
-               <Helmet>
-            <title>Blazing Render Creation Hub LLP</title>
-            <meta
-              name="BRC Hub LLP"
-              content="This Page is Developed by Blazing Render Creation Hub LLP https://brchub.vercel.app/"
-            />
-          </Helmet>
+  <Helmet>
+  <title>Legalvala Consultancy LLP | Expert Business Setup & Compliance</title>
+  <meta
+    name="description"
+    content="Legalvala Consultancy LLP helps startups, SMEs, and enterprises with business setup, GST, tax compliance, and legal advisory across India."
+  />
+  <meta name="keywords" content="Legalvala, Business Consultancy, GST Filing, Legal Compliance, Company Registration" />
+  <meta name="author" content="Legalvala Consultancy LLP" />
+
+  {/* <!-- Organization Structured Data --> */}
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Legalvala Consultancy LLP",
+        "url": "https://www.legalvala.com",
+        "logo": "https://www.legalvala.com/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-XXXXXXXXXX",
+          "contactType": "Customer Service"
+        },
+        "sameAs": [
+          "https://www.facebook.com/legalvala",
+          "https://www.instagram.com/legalvala"
+        ]
+      }
+    `}
+  </script>
+
+  {/* <!-- Appointment Booking Service Structured Data --> */}
+  <script type="application/ld+json">
+    {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Business Appointment Booking",
+        "url": "https://www.legalvala.com/appointment",
+        "provider": {
+          "@type": "Organization",
+          "name": "Legalvala Consultancy LLP"
+        }
+      }
+    `}
+  </script>
+</Helmet>
+
+
+
           <Navbar />
           <Routes>
             <Route path="/" element={<Acasa />} />
