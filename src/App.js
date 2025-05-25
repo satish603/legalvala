@@ -11,6 +11,12 @@ import Footer from "./components/Footer";
 import ErrorPage from "./pages/ErrorPage";
 import AboutUs from "./pages/AboutUs";
 import ContactForm from "./components/ContactForm";
+import Appointment from "./pages/Appointment";
+import AppointmentSuccess from "./pages/AppointmentSuccess";
+
+
+
+
 
 function App() {
 
@@ -41,10 +47,8 @@ function App() {
       </>
       <>
         <BrowserRouter>
-          <Helmet>
-            <title>
-              Blazing Render Creation Hub LLP
-            </title>
+               <Helmet>
+            <title>Blazing Render Creation Hub LLP</title>
             <meta
               name="BRC Hub LLP"
               content="This Page is Developed by Blazing Render Creation Hub LLP https://brchub.vercel.app/"
@@ -58,6 +62,8 @@ function App() {
             <Route path="/insolventa" element={<Insolventa />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/AboutUs" element={<AboutUs />} />
+            <Route path="/appointment" element={<Appointment />} />
+            <Route path="/appointment-success" element={<AppointmentSuccess />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
           <Footer />

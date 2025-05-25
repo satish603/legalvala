@@ -33,7 +33,7 @@ const TopBanner = () => {
               className="banner-icon phone-icon pe-2"
               size="1x"
             />{" "}
-            +91 73026 58311
+            +91 88648 85831
           </div>
         </div>
       </div>

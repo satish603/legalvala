@@ -163,7 +163,7 @@ footer h6 {
 } */
 
 .copyright {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: rgb(222, 217, 217);
   }
 
@@ -691,3 +691,182 @@ footer h6 {
 .slick-arrow.slick-prev:before {
   color: black !important;
 }
+/* WRAPPER & TITLE */
+.appointment-wrapper {
+  background-color: #0a2a47;
+  color: #e7eaef;
+  padding: 2rem;
+  max-width: 1300px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.appointment-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #c2b697;
+  text-align: center;
+}
+
+/* FORM SECTION */
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.appointment-form label {
+  font-weight: bold;
+  color: #ebe2d6;
+}
+
+/* INPUTS */
+.appointment-form input,
+.appointment-form .form-control {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  color: #000;
+  width: 100%;
+}
+
+.appointment-form input:focus,
+.appointment-form .form-control:focus {
+  outline: none;
+  border-color: #c2b697;
+  box-shadow: 0 0 5px #c2b69788;
+}
+
+/* TIME SLOTS */
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.time-slots .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.time-slots .btn:hover {
+  background-color: #2d6da5;
+}
+
+.time-slots .btn-primary {
+  background-color: #2d6da5;
+  border-color: #2d6da5;
+}
+
+/* BUTTON */
+.appointment-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #2d6da5;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.appointment-form button:hover {
+  background-color: #23507c;
+}
+
+.appointment-note {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: center;
+}
+
+/* CLIENT INFO BOX */
+.client-info-box {
+  background-color: #102e50;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: left;
+  color: #e7eaef;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+
+.client-info-box img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px; /* rectangle with rounded corners */
+  margin-bottom: 1rem;
+  border: 3px solid #c2b697;
+}
+
+.client-info-box h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #c2b697;
+}
+
+.client-info-box p {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.client-info-box p:last-child {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* DATEPICKER Z-INDEX */
+.react-datepicker-popper {
+  z-index: 9999 !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .client-info-box {
+    margin-bottom: 2rem;
+  }
+}
+.custom-align{
+  align-content: center;
+  text-align: center;
+}
+.appointment-success-wrapper {
+  background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+  padding: 2rem;
+}
+
+.appointment-success-card {
+  max-width: 600px;
+  margin: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.checkmark-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
