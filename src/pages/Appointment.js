@@ -214,7 +214,7 @@ const Appointment = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    window.open("https://calendar.app.google/A3xkzBJqLBstQyiU7", "_blank");
+    window.open("https://calendar.app.google/7uFXrEmKoUKaJjXk6", "_blank");
     navigate("/"); 
   }, [navigate]);
 
