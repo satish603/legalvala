@@ -14,11 +14,11 @@ const Acasa = () => {
     <>
       <div className="home-page">
         <Helmet>
-          <title>LegalVala | Legal & Business Solutions</title>
+          <title>Legalvala | Legal & Business Solutions</title>
 
           <meta
             name="description"
-            content="LegalVala offers professional legal, tax, and business consultancy services, ensuring compliance and growth for individuals and businesses."
+            content="Legalvala offers professional legal, tax, and business consultancy services, ensuring compliance and growth for individuals and businesses."
           />
         </Helmet>
         {/* HERO=========== */}
