@@ -207,9 +207,6 @@ const Appointment = () => {
 
           <button type="submit" disabled={loading}>Confirm Appointment</button>
 
-          // <p className="appointment-note">
-          //   <strong>Note:</strong> A small ₹10 fee confirms your slot to avoid cancellations.
-          // </p>
         </form>
       </div>
 
