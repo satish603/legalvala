@@ -61,7 +61,7 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item mx-3 mb-2">
                   <NavLink
-                    to="/avocatura"
+                    to="/services"
                     style={({ isActive }) => ({
                       textDecoration: "none",
                       color: isActive ? "#c2b697" : "#fff",
@@ -87,7 +87,7 @@ const Navbar = () => {
                 </li> */}
                 <li className="nav-item mx-3 mb-2">
                   <NavLink
-                    to="/informatii-utile"
+                    to="/gst-tax-compliance"
                     style={({ isActive }) => ({
                       textDecoration: "none",
                       color: isActive ? "#c2b697" : "#fff",

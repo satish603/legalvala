@@ -68,7 +68,7 @@ const Acasa = () => {
                   </Link>
                 </div>
                 <div className="col flex-grow-1">
-                  <Link to="/avocatura">
+                  <Link to="/services">
                     <button
                       className="btn btn-lg btn-outline-dark type-button p-4 w-100 fw-bold"
                       aria-label="Our Services"
@@ -107,7 +107,7 @@ const Acasa = () => {
                   Request an Appointment
                 </button>
               </Link>
-              <Link to="/informatii-utile">
+              <Link to="/gst-tax-compliance">
                 <button
                   className="btn btn-outline-dark type-button p-2 btn-md"
                   aria-label="Our Services"
